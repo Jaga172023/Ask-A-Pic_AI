@@ -25,7 +25,9 @@ const startServer = async () => {
 		connectDB(process.env.MONGODB_URL);
 
 		app.listen(8080, () => {
-			console.log("Server has started at http://localhost:8080");
+			console.log(
+				"Server has started at https://project-ask-a-pic-ai.onrender.com"
+			);
 		});
 	} catch (error) {
 		console.log(error);
